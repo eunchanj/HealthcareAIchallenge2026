@@ -1,0 +1,17 @@
+age
+male
+sbp
+dbp
+bmi
+waist
+smoke_past
+smoke_cur
+packyr
+drink_past
+drink_cur
+exer
+htn
+dm
+lip
+fh_htn
+fh_dm

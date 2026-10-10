@@ -1,0 +1,12 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+statsmodels>=0.14
+scikit-learn>=1.5
+lightgbm>=4.3
+xgboost>=2.1
+catboost>=1.2
+matplotlib>=3.8
+nbformat>=5.10
+jupyter
+tabpfn>=9.0.0   # TabPFN-3.5, 연구 및 평가용 라이선스 동의와 API 키 필요 (ux.priorlabs.ai)

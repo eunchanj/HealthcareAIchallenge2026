@@ -1,0 +1,31 @@
+# 원자료와 개인 수준 파생 자료는 절대 올리지 않는다 (데이터 활용 서약)
+02_Data/
+data/
+derived/
+*.bed
+*.bim
+*.fam
+*oof_predictions*.csv
+lead_dosage.csv
+base_analysis.csv
+follow_*.csv
+extended_clinical.csv
+bg_scan_p_*.npy
+final_models/
+*.pkl
+*.pickle
+
+# 키와 캐시
+.tabpfn_token
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.Rhistory
+
+# 점검용 산출물
+fast_*
+dryrun_*
+_tmp*/
+_archive*/

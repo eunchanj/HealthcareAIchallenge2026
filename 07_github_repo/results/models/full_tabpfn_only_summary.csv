@@ -1,0 +1,5 @@
+﻿블록,TabPFN AUPRC,TabPFN AUROC,TabPFN Brier,TabPFN 보정 기울기,TabPFN 민감도@20%,AUPRC 순위,TabPFN − Elastic-net AUPRC (95% CI),기존 최고(AUPRC),주 모델 전 → 후,TabPFN 계산(분)
+M1,0.235,0.6269,0.1244,0.96,0.353,2/6,"-0.0046 (-0.0109, +0.0006)",Elastic-net (기준선) 0.2387,enet → enet,3.8
+M1+G,0.2396,0.6315,0.1243,0.97,0.355,4/6,"-0.0013 (-0.0074, +0.0044)",XGBoost 0.2431,enet → enet,4.8
+M1-Dx,0.1795,0.5527,0.1281,0.88,0.255,2/6,"+0.0039 (-0.0010, +0.0094)",Random Forest 0.1805,enet → enet,3.5
+M1-Dx+G,0.2028,0.5821,0.1271,1.01,0.278,2/6,"+0.0090 (+0.0033, +0.0153)",Random Forest 0.2040,rf → tabpfn,4.7

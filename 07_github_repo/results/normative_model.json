@@ -1,0 +1,107 @@
+{
+  "seed": 20260915,
+  "blocks": {
+    "C0": [
+      "age",
+      "male"
+    ],
+    "C1": [
+      "sbp",
+      "dbp",
+      "bmi",
+      "waist",
+      "smoke_past",
+      "smoke_cur",
+      "packyr",
+      "drink_past",
+      "drink_cur",
+      "exer",
+      "htn",
+      "dm",
+      "lip",
+      "fh_htn",
+      "fh_dm"
+    ],
+    "C2": [
+      "glu",
+      "hba1c",
+      "cr",
+      "ast",
+      "alt",
+      "tc",
+      "hdl",
+      "ldl",
+      "tg"
+    ],
+    "base_only": [
+      "income",
+      "totalc"
+    ],
+    "follow_only": [
+      "edu"
+    ]
+  },
+  "outcome": {
+    "primary": "atrophy_pos = z_hip <= -1",
+    "sensitivity": "atrophy_pos_b20 (개발군 하위 20%)",
+    "secondary": [
+      "wb_pos = z_wb <= -1",
+      "vent_pos = z_vent >= 1",
+      "composite_pos"
+    ],
+    "longitudinal": "accel_atrophy = rate_hip 하위 20% (추적군 내)"
+  },
+  "normative": {
+    "hip_ratio": {
+      "resid_sd": 0.0005865057010655177,
+      "R2": 0.3129,
+      "sex_x_age_F": 6.706,
+      "sex_x_age_p": 0.0,
+      "sd_by_age_band": {
+        "40": 0.000602,
+        "45": 0.000596,
+        "50": 0.000584,
+        "55": 0.000597,
+        "60": 0.00057,
+        "65": 0.000556,
+        "70": 0.000559,
+        "75": 0.000599
+      },
+      "coef_male": -0.000323
+    },
+    "wb_ratio": {
+      "resid_sd": 0.053846944224537695,
+      "R2": 0.2648,
+      "sex_x_age_F": 1.91,
+      "sex_x_age_p": 0.1058,
+      "sd_by_age_band": {
+        "40": 0.054968,
+        "45": 0.05497,
+        "50": 0.054352,
+        "55": 0.053125,
+        "60": 0.05179,
+        "65": 0.053023,
+        "70": 0.053473,
+        "75": 0.048587
+      },
+      "coef_male": -0.000789
+    },
+    "vent_ratio": {
+      "resid_sd": 0.004571874360828818,
+      "R2": 0.5253,
+      "sex_x_age_F": 42.977,
+      "sex_x_age_p": 0.0,
+      "sd_by_age_band": {
+        "40": 0.004382,
+        "45": 0.00505,
+        "50": 0.005287,
+        "55": 0.004805,
+        "60": 0.003904,
+        "65": 0.003108,
+        "70": 0.00291,
+        "75": 0.002505
+      },
+      "coef_male": -6e-05
+    }
+  }
+}
